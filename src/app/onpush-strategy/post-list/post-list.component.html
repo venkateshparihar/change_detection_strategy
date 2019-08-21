@@ -1,0 +1,13 @@
+<div class="container">
+
+  <div class="row">
+    <dcd-post [post]="posts" [template]="'NAME'"></dcd-post>
+  </div>
+</div>
+
+<div>
+  App Component Data
+  <pre> {{ this.posts | json}}</pre>
+  <button (click)="refChangeData()">reference Changes</button>
+  <button (click)="propertiesChangeData()">properties Changes</button>
+</div>

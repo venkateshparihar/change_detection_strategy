@@ -1,0 +1,15 @@
+<div class="container">
+
+  <div class="row">
+    <!-- <div class="col-sm" *ngFor="let post of posts"> -->
+    <dcd-post [post]="posts" [template]="'NAME'"></dcd-post>
+    <!-- </div> -->
+  </div>
+</div>
+
+<div>
+  App Component Data
+  <pre> {{ this.posts | json}}</pre>
+  <button (click)="refChangeData()">reference Changes</button>
+  <button (click)="propertiesChangeData($event)">properties Changes</button>
+</div>
